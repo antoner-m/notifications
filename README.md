@@ -32,12 +32,16 @@ I glad to receive feedback to this project. For any questions please email me: m
 
 # How to start
 To start server you should pass as java parameter or modify parameters in application.properties:
+
 NOTIFICATION_DB_URL=jdbc:mariadb://[example.com]:3306/[database_name]?connectionTimeZone=UTC
+
 NOTIFICATION_DB_USER=[db_user]
+
 NOTIFICATION_DB_PASS=[password]
+
 JWT_ISSUER_URI=https://cloak.example.org/auth/realms/[yourrealmname]
 
-#Keycloak
+# Keycloak
 Rest api client user should have:
 1. Client configured with unique Client ID.
 2. Access type: confidential
@@ -49,6 +53,6 @@ Configuration for rest api client tests is inside client/src/test/resources/appl
 
 Server just uses JWT token from client and don't need a authentication credentials for itself.
 
-#Docker
+# Docker
 Server exposes port 8091 as HTTP endpoint for rest api application.
 
