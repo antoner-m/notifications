@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.sitecenter</groupId>
+        <groupId>org.sitecenter</groupId>
         <artifactId>notification</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -15,7 +15,7 @@
     <description>Simple notification service for sitecenter.org</description>
 
     <properties>
-        <start-class>com.sitecenter.notification.NotificationServerApplication</start-class>
+        <start-class>org.sitecenter.notification.NotificationServerApplication</start-class>
     </properties>
 
     <dependencyManagement>
@@ -125,7 +125,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.sitecenter</groupId>
+            <groupId>org.sitecenter</groupId>
             <artifactId>notif-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
@@ -158,7 +158,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.5</version>
                 <configuration>
-                    <mainClass>com.sitecenter.notification.NotificationServerApplication</mainClass>
+                    <mainClass>org.sitecenter.notification.NotificationServerApplication</mainClass>
                     <layout>JAR</layout>
                     <excludes>
                         <exclude>
@@ -199,7 +199,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>3.0.4</version>
                 <configuration>
-                    <mainClass>com.sitecenter.notification.NotificationServerApplication</mainClass>
+                    <mainClass>org.sitecenter.notification.NotificationServerApplication</mainClass>
                 </configuration>
 
                 <executions>
